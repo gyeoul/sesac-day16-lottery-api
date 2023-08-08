@@ -13,6 +13,10 @@
 		454C3D832A82445C00968DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454C3D812A82445C00968DE4 /* Main.storyboard */; };
 		454C3D852A82445F00968DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454C3D842A82445F00968DE4 /* Assets.xcassets */; };
 		454C3D882A82445F00968DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454C3D862A82445F00968DE4 /* LaunchScreen.storyboard */; };
+		454C3D902A8244F600968DE4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 454C3D8F2A8244F600968DE4 /* .gitignore */; };
+		454C3D922A82454100968DE4 /* APIkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C3D912A82454100968DE4 /* APIkey.swift */; };
+		454C3D952A825BDA00968DE4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 454C3D942A825BDA00968DE4 /* SwiftyJSON */; };
+		454C3D982A825BE300968DE4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 454C3D972A825BE300968DE4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		454C3D842A82445F00968DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454C3D872A82445F00968DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454C3D892A82445F00968DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454C3D8F2A8244F600968DE4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		454C3D912A82454100968DE4 /* APIkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkey.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454C3D952A825BDA00968DE4 /* SwiftyJSON in Frameworks */,
+				454C3D982A825BE300968DE4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 		454C3D6F2A82445B00968DE4 = {
 			isa = PBXGroup;
 			children = (
+				454C3D8F2A8244F600968DE4 /* .gitignore */,
 				454C3D7A2A82445C00968DE4 /* sesac-day16-lottery-api */,
 				454C3D792A82445C00968DE4 /* Products */,
 			);
@@ -56,6 +65,7 @@
 		454C3D7A2A82445C00968DE4 /* sesac-day16-lottery-api */ = {
 			isa = PBXGroup;
 			children = (
+				454C3D912A82454100968DE4 /* APIkey.swift */,
 				454C3D7B2A82445C00968DE4 /* AppDelegate.swift */,
 				454C3D7D2A82445C00968DE4 /* SceneDelegate.swift */,
 				454C3D7F2A82445C00968DE4 /* ViewController.swift */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = "sesac-day16-lottery-api";
+			packageProductDependencies = (
+				454C3D942A825BDA00968DE4 /* SwiftyJSON */,
+				454C3D972A825BE300968DE4 /* Alamofire */,
+			);
 			productName = "sesac-day16-lottery-api";
 			productReference = 454C3D782A82445C00968DE4 /* sesac-day16-lottery-api.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 454C3D6F2A82445B00968DE4;
+			packageReferences = (
+				454C3D932A825BDA00968DE4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				454C3D962A825BE300968DE4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 454C3D792A82445C00968DE4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454C3D902A8244F600968DE4 /* .gitignore in Resources */,
 				454C3D882A82445F00968DE4 /* LaunchScreen.storyboard in Resources */,
 				454C3D852A82445F00968DE4 /* Assets.xcassets in Resources */,
 				454C3D832A82445C00968DE4 /* Main.storyboard in Resources */,
@@ -140,6 +159,7 @@
 			files = (
 				454C3D802A82445C00968DE4 /* ViewController.swift in Sources */,
 				454C3D7C2A82445C00968DE4 /* AppDelegate.swift in Sources */,
+				454C3D922A82454100968DE4 /* APIkey.swift in Sources */,
 				454C3D7E2A82445C00968DE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		454C3D932A825BDA00968DE4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		454C3D962A825BE300968DE4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		454C3D942A825BDA00968DE4 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 454C3D932A825BDA00968DE4 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		454C3D972A825BE300968DE4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 454C3D962A825BE300968DE4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 454C3D702A82445C00968DE4 /* Project object */;
 }
